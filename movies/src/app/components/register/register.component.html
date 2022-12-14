@@ -1,0 +1,19 @@
+<div class="container mt-3 d-flex justify-content-center">
+    <form #registerForm= 'ngForm' (ngSubmit)="onSubmit(registerForm)">
+
+  <div class="mb-3 ">
+    <label for="name" class="form-label text-light">Name*</label>
+    <input type="name" class="form-control" id="name" aria-describedby="emailHelp" name="name" ngModel required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label text-light">Email Address*</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" ngModel required email>
+    <div id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label text-light">Password*</label>
+    <input type="password" class="form-control" id="password" name = "password" ngModel required>
+  </div>
+  <button type="submit" class="btn btn-danger"> Registrati</button>
+</form>
+</div>
